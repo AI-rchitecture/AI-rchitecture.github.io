@@ -2,7 +2,7 @@
 
 module.exports = {
   content: [
-    './*.{html,js}',
+    './views/frontOffice/*.{html,js}',
   ],
   theme: {
     extend: {

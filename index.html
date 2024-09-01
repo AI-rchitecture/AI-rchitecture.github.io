@@ -1,288 +1,174 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>AI-rchitecture</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+<html lang="en">
 
-    body, html {
-      height: 100%;
-      line-height: 1.8;
-    }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-rchitecture</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="dist/output.css" rel="stylesheet">
+</head>
 
-    /* Full height image header */
-    .bgimg-1 {
-      background-position: center;
-      background-size: cover;
-      background-image: url("https://www.w3schools.com/w3images/mac.jpg");
-      min-height: 100%;
-    }
-
-    .w3-bar .w3-button {
-      padding: 16px;
-    }
-    </style>
-  </head>
-<body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
-
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Create something that matters</span><br>
-    <span class="w3-large">Stop wasting your time with drawing a design by hand!</span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
-  </div> 
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <a href="https://www.facebook.com" target = "_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://www.instagram.com" target = "_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="https://www.twitter.com" target = "_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com" target = "_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  </div>
-</header>
-
-<!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">ABOUT THE COMPANY</h3>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Responsive</p>
-      <p>Create 3D building designs from natural human language.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Passion</p>
-      <p>Passionate about helping people bring their architectural ideas to life.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Design</p>
-      <p>Design beautiful and functional buildings with ease.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Support</p>
-      <p>Providing excellent customer support to ensure a smooth experience.</p>
-    </div>
-  </div>
-</div>
-
-<!-- Team Section -->
-<div class="w3-container" style="padding:128px 16px" id="team">
-  <h3 class="w3-center">THE TEAM</h3>
-  <p class="w3-center w3-large">The ones who runs this company</p>
-  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="pictures/Bilguun profile.jpg" style="width:100%">
-          <div class="w3-container">
-            <h3>Bilguun Tegshbayar</h3>
-            <p class="w3-opacity">CEO & Founder</p>
-            <p>
-              Bilguun is visionary and inspirational leader who has a passion for architecture and technology. 
-              He is the founder of AI-rchitecture and has been leading the company since its inception.
-            </p>
-            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> <a href = "mailto:bilguunbek0607@gmai.com"> Contact</button></p>
-          </div>
-        </div>
-      </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="pictures/Unknown profile.jpg" style="width:100%">
-          <div class="w3-container">
-            <h3>Unknown</h3>
-            <p class="w3-opacity">Unknown</p>
-            <p>Unknown</p>
-            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-          </div>
-        </div>
-      </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="pictures/Unknown profile.jpg" style="width:100%">
-          <div class="w3-container">
-            <h3>Unknown</h3>
-            <p class="w3-opacity">Unknown</p>
-            <p>Unknown</p>
-            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-          </div>
-        </div>
-      </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="pictures/Unknown profile.jpg" style="width:100%">
-          <div class="w3-container">
-            <h3>Unknown</h3>
-            <p class="w3-opacity">Unknown</p>
-            <p>Unknown</p>
-            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-          </div>
-        </div>
+<body class="bg-gradient-to-b from-indigo-800 via-purple-600 to-pink-600 text-white p-5 flex flex-col gap-10">
+  <div class="hidden md:flex justify-center">
+    <div class="w-full xl:w-2/3 bg-black rounded-lg fixed">
+      <div class="flex justify-between items-center p-2 divide-x">
+        <a href="#" class="text-gray-300 hover:text-white w-1/6 text-center">HOME</a>
+        <a href="#research" class="text-gray-300 hover:text-white w-1/6 text-center">RESEARCH</a>
+        <a href="#work" class="text-gray-300 hover:text-white w-1/6 text-center">OUR WORK</a>
+        <a href="#products" class="text-gray-300 hover:text-white w-1/6 text-center">PRODUCTS</a>
+        <a href="#news" class="text-gray-300 hover:text-white w-1/6 text-center">NEWS</a>
+        <a href="#contact" class="text-gray-300 hover:text-white w-1/6 text-center">CONTACT</a>
       </div>
     </div>
   </div>
-</div>
 
-<!-- Work Section -->
-<div class="w3-container" style="padding:128px 16px" id="work">
-  <h3 class="w3-center">OUR WORK</h3>
-  <p class="w3-center w3-large">What we've done for people!</p>
-  
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Pricing Section -->
-<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
-  <h3>PRICING</h3>
-  <p class="w3-large">Choose a pricing plan that fits your needs.</p>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-third w3-section">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
-        <li class="w3-padding-16"><b>10GB</b> Storage</li>
-        <li class="w3-padding-16"><b>10</b> Emails</li>
-        <li class="w3-padding-16"><b>10</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$ 10</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-    <div class="w3-third">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-red w3-xlarge w3-padding-48">Pro</li>
-        <li class="w3-padding-16"><b>25GB</b> Storage</li>
-        <li class="w3-padding-16"><b>25</b> Emails</li>
-        <li class="w3-padding-16"><b>25</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$ 25</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-    <div class="w3-third w3-section">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
-        <li class="w3-padding-16"><b>50GB</b> Storage</li>
-        <li class="w3-padding-16"><b>50</b> Emails</li>
-        <li class="w3-padding-16"><b>50</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$ 50</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
+  <div id="home" class="flex justify-center items-center rounded-lg">
+    <div class="text-center text-white py-16 w-full xl:w-2/3">
+      <h1 class="text-4xl sm:text-7xl font-bold typewriter">AI-rchitecture</h1>
+      <h4 class="mt-4 text-2xl">Create something that matters!</h4>
     </div>
   </div>
-</div>
 
-<!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-  <h3 class="w3-center">CONTACT US</h3>
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-  <div style="margin-top:48px" align = "center">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i><a href="https://www.google.com/maps/place/Montreal,+QC,+Canada" target="_blank">Montreal, QC, Canada</a></p>
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i><a href="https://www.google.com/maps/place/Ulaanbaatar,+Mongolia" target="_blank">Ulaanbaatar, Mongolia</a></p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: <a href="tel:+14389285812" target = "_blank">+1 (438) 928-5812</a></p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: <a href = "mailto:bilguunbek0607@gmail.com" target = "_blank"> bilguunbek0607@gmail.com</p>
-    <br>
-    <!-- Image of location/map -->
+  <div id="research" class="flex justify-center items-center gap-5 flex-col">
+    <span class="text-4xl text-primary">RESEARCH</span>
+    <div class="grid grid-cols-4 gap-5 overflow-x-auto w-full xl:w-2/3">
+      <div class="bg-gray-800 p-8 rounded-lg flex-1">
+        <h2 class="text-2xl font-semibold">Research 1</h2>
+        <p class="mt-2">
+          Description for research 1.
+        </p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-lg flex-1">
+        <h2 class="text-2xl font-semibold">Research 2</h2>
+        <p class="mt-2">
+          Description for research 2.
+        </p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-lg flex-1">
+        <h2 class="text-2xl font-semibold">Research 3</h2>
+        <p class="mt-2">
+          Description for research 3.
+        </p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-lg flex-1">
+        <h2 class="text-2xl font-semibold">Research 4</h2>
+        <p class="mt-2">
+          Description for research 4.
+        </p>
+      </div>
+    </div>
   </div>
-</div>
 
-<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a> 
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <div id="work" class="flex justify-center items-center gap-5 flex-col">
+    <span class="text-4xl text-primary">Our Work</span>
+    <div class="grid grid-cols-2 gap-5 overflow-x-auto w-full xl:w-2/3">
+      <div class="bg-gray-800 p-8 rounded-lg flex-1">
+        <h2 class="text-2xl font-semibold">Research 1</h2>
+        <p class="mt-2">
+          Description for research 1.
+        </p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-lg flex-1">
+        <h2 class="text-2xl font-semibold">Research 2</h2>
+        <p class="mt-2">
+          Description for research 2.
+        </p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-lg flex-1">
+        <h2 class="text-2xl font-semibold">Research 3</h2>
+        <p class="mt-2">
+          Description for research 3.
+        </p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-lg flex-1">
+        <h2 class="text-2xl font-semibold">Research 4</h2>
+        <p class="mt-2">
+          Description for research 4.
+        </p>
+      </div>
+    </div>
   </div>
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
 
+  <div id="products" class="flex justify-center items-center gap-5 flex-col">
+    <span class="text-4xl text-primary">PRODUCTS</span>
+    <div class="grid grid-cols-3 gap-5 overflow-x-auto w-full xl:w-2/3">
+      <div class="bg-gray-800 p-8 rounded-lg flex-1">
+        <h2 class="text-2xl font-semibold">Research 1</h2>
+        <p class="mt-2">
+          Description for research 1.
+        </p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-lg flex-1">
+        <h2 class="text-2xl font-semibold">Research 2</h2>
+        <p class="mt-2">
+          Description for research 2.
+        </p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-lg flex-1">
+        <h2 class="text-2xl font-semibold">Research 3</h2>
+        <p class="mt-2">
+          Description for research 3.
+        </p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-lg flex-1">
+        <h2 class="text-2xl font-semibold">Research 4</h2>
+        <p class="mt-2">
+          Description for research 4.
+        </p>
+      </div>
+    </div>
+  </div>
 
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
+  <div id="news" class="flex justify-center items-center gap-5 flex-col">
+    <span class="text-4xl text-primary">NEWS</span>
+    <div class="grid grid-cols-4 gap-5 overflow-x-auto w-full xl:w-2/3">
+      <div class="bg-gray-800 p-8 rounded-lg flex-1">
+        <h2 class="text-2xl font-semibold">Research 1</h2>
+        <p class="mt-2">
+          Description for research 1.
+        </p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-lg flex-1">
+        <h2 class="text-2xl font-semibold">Research 2</h2>
+        <p class="mt-2">
+          Description for research 2.
+        </p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-lg flex-1">
+        <h2 class="text-2xl font-semibold">Research 3</h2>
+        <p class="mt-2">
+          Description for research 3.
+        </p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-lg flex-1">
+        <h2 class="text-2xl font-semibold">Research 4</h2>
+        <p class="mt-2">
+          Description for research 4.
+        </p>
+      </div>
+    </div>
+  </div>
 
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
-
+  <footer class="flex justify-center text-center">
+    <div class="w-full xl:w-2/3 bg-gray-800 py-8 px-4 rounded-lg grid grid-cols-4 gap-5">
+      <div class="hover:bg-gray-700 rounded-lg p-4">
+        <h2 class="text-2xl font-semibold">Company</h2>
+        <p class="mt-2">Create something that matters!</p>
+      </div>
+      <div class="hover:bg-gray-700 rounded-lg p-4">
+        <h2 class="text-2xl font-semibold">Research</h2>
+        <p class="mt-2">Create something that matters!</p>
+      </div>
+      <div class="hover:bg-gray-700 rounded-lg p-4">
+        <h2 class="text-2xl font-semibold">Contact us</h2>
+        <p class="mt-2">Create something that matters!</p>
+      </div>
+      <div class="hover:bg-gray-700 rounded-lg p-4">
+        <h2 class="text-2xl font-semibold">Products</h2>
+        <p class="mt-2">Create something that matters!</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
